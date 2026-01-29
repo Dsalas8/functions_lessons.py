@@ -40,7 +40,12 @@ print(sum_squares(1,2,3))
 
 # Indefinite Arguments (*args) Practice #2
 # Create a function called absolute_sum, which takes any number of arguments, and returns the sum of their absolute values (that is, it takes the non-negative values and adds them together, in other words, considers them all - negative and positive - as positive).
-
+def absolute_sum(*args):
+    total = 0 
+    for num in args: #Iterate through each arguement 
+        total += abs(num) # Add the absolute value of the numbers
+    return total 
+print(absolute_sum(-1, -2, -3))
 # Indefinite Arguments (*args) Practice #3
 # Create a function called personal_numbers that receives, as its first argument, a name, and then an indefinite number of values.
 
