@@ -5,7 +5,8 @@
 def number_attributes(*args):
     return len(args)
 print(number_attributes(1, 2, 3))   # returns 3
-print(number_attributes("a"))      # returns 1
+print(number_attributes("a","b","c"))
+     # returns 1
 print(number_attributes())          # returns 0
 
 
@@ -18,7 +19,10 @@ print(number_attributes())          # returns 0
 # Indefinite Arguments (**kwargs) Practice #2
 # Create a function called list_attributes that returns in the form of a list the values of the attributes given in the form of keywords. The function must expect to receive any number of arguments of this type.
 
-def list_attributes
+def list_attributes(*args):
+    return len(args)
+print(keywords_attributes(what, six, elite))
+print(keywords_attributes(""))
 
 
 
