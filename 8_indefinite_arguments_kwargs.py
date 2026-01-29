@@ -22,7 +22,7 @@ def list_attributes(*args):
     return len(args)
 print(keywords_attributes(what, six, elite)) #returns elite
 print(keywords_attributes("b"))              #returns six
-print(number_attributes())
+print(number_attributes())                   #returns nothing
 
 
 
