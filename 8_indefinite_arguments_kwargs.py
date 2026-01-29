@@ -5,8 +5,7 @@
 def number_attributes(*args):
     return len(args)
 print(number_attributes(1, 2, 3))   # returns 3
-print(number_attributes("a","b","c"))
-     # returns 1
+print(number_attributes("a"))       # returns 1
 print(number_attributes())          # returns 0
 
 
@@ -21,8 +20,9 @@ print(number_attributes())          # returns 0
 
 def list_attributes(*args):
     return len(args)
-print(keywords_attributes(what, six, elite))
-print(keywords_attributes(""))
+print(keywords_attributes(what, six, elite)) #returns elite
+print(keywords_attributes("b"))              #returns six
+print(number_attributes())
 
 
 
