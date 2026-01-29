@@ -30,7 +30,13 @@ print(tea_order("Tony", "black", "oat", sweetener="honey"))
 # Create a function called sum_squares that takes any number of numeric arguments, and returns the sum of their values squared.
 
 # For example for the arguments sum_squares(1,2,3) it should return 14 (1+4+9).
+def sum_squares(*args):   
+    sum = 0                 #Initialize sum at 0 
+    for num in args:        # Iterate through each arguement 
+        sum+= num ** 2      # square the number and add it to the sum 
 
+    return sum 
+print(sum_squares(1,2,3))
 
 # Indefinite Arguments (*args) Practice #2
 # Create a function called absolute_sum, which takes any number of arguments, and returns the sum of their absolute values (that is, it takes the non-negative values and adds them together, in other words, considers them all - negative and positive - as positive).
